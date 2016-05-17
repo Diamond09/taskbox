@@ -1,0 +1,20 @@
+<h3>Total No of students - <%= @students.size %></h3> 
+<table border = "1">
+<thead>
+<tr>
+<th> Name </th>
+<th> email </th>
+<th> deleted_at </th>
+</tr>
+</thead>
+
+<% @students.each do |student| %>
+<tr>
+<td><%= link_to student.name,student_path(student.id) %></td>
+<td><%= student.email %></td>
+<td><%= student.deleted_at %></td>
+</tr>
+<% end %>
+<%= link_to "Add Student",new_student_path %>
+
+</table>

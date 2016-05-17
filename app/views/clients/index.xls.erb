@@ -1,0 +1,25 @@
+<table border = "1">
+  <tr>
+   <thead>
+    <th>#</th>
+    <th>Name</th>
+    <th>Company</th>
+    <th>Website</th>
+    <th>Email</th>
+    <th>Mobile</th>
+  </thead>
+ </tr>
+
+ <% @clients.each_with_index do |client,index| %>
+ <tr>
+  <td><%= index + 1 %></td>
+  <td><%= link_to client.name,client_url(client.id) %></td>
+  <td><%= client.company %></td>
+  <td><%= client.website %></td>
+  <td><%= client.email %></td>
+  <td><%= client.mobile %></td>
+ </tr>
+ 
+ <% end %>
+ </table>
+ <%= link_to "Add Client",new_client_url %>

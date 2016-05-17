@@ -1,0 +1,1 @@
+puts "Isha Volunteer connect is a platform to connect volunteers and update them about the upcoming events and programs \n to provide an oppurtunity to volunteer."

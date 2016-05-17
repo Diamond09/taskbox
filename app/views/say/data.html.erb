@@ -1,0 +1,62 @@
+<h1>Total Clients : <%= @clients.size %></h1>
+<ul>
+<% for client in @clients %>
+<li> <%= client.name %> </li>
+<% if client.projects.empty? %>
+No projects found
+<% else %>
+<b>Total projects = <%= client.projects.size %></b>
+<% projects = client.projects %>
+<ul>
+<% for project in projects %>
+<li> <%= project.name %></li>
+<li> <%= project.start_date %></li>
+<% end %>
+
+</ul>
+<% end %>
+<% end%>
+</ul>
+
+<h1>Total projects : <%= @projects.size %></h1>
+<ul>
+<% for project in @projects %>
+<li> <%= project.name %> </li>
+
+ 
+ <% if project.tasks.empty? %>
+ No tasks found
+ <% else %>
+ <% tasks = project.tasks %>
+
+<b>Total tasks : <%= tasks.size %></b>
+<% completed_tasks = tasks.where('is_completed =? AND due_date < ?',true,Date.today) %>
+<% incomplete_tasks = tasks.where('is_completed = ? AND due_date >= ?',false,Date.today) %>
+<% overdue_tasks = tasks.where('is_completed = ? AND due_date < ?',false,Date.today) %>
+
+<ul>
+<% for task in completed_tasks %>
+<li> Completed tasks <%= task.name %> - <%= task.due_date.strftime("%A ,%d %B %Y") %> </li>
+<% end %>
+</ul>
+
+<ul>
+<% for task in incomplete_tasks %> 
+<li>  Incomplete tasks <%= task.name %> - <%= task.due_date.strftime("%A ,%d %B %Y") %> </li>
+<% end %>
+</ul>
+
+<ul>
+<% for task in overdue_tasks %>
+<li> Overdue tasks <%= task.name %> - <%= task.due_date.strftime("%A ,%d %B %Y") %> </li>
+<% end %>
+</ul>
+
+<% end %>
+<% end %>
+</ul>
+
+
+
+
+

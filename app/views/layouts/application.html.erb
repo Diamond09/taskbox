@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TaskboxrailsV</title>
+  <%=  javascript_include_tag 'application' %>
+ <%=  javascript_include_tag "https://www.google.com/jsapi", "chartkick" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<%= notice %>
+<%= alert %>
+<% if user_signed_in? %>
+<%= current_user.email %> | (<%= current_user.current_sign_in_ip %>)
+<%= link_to "Logout", destroy_user_session_path,method: :delete %>
+<% else %>
+<%= link_to "Login", new_user_session_path %> | <%= link_to "Sign-up", new_user_registration_path %>
+<% end %>
+<%= yield %>
+
+</body>
+</html>

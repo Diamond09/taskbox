@@ -1,0 +1,31 @@
+
+ 
+ <h3>Listing Clients</h3>
+ <p>Total Clients : <%= @clients.size %></p>
+ <ol>
+ <% @clients.each do |client| %>
+ <li> <%= client.name %> - <%= client.company %> </li>
+ <% end %>
+ </ol>
+
+ <table border="2">
+ <thead>
+ <th>Sl no</th>
+ <th>name</th>
+ <th>Company</th>
+ <th>Mobile</th>
+ <th>Website</th>
+ </thead>
+ <tbody>
+ <% @clients.each_with_index do |client,index| %>
+ <tr>
+ <td><%= index +1 %> </td>
+ <td><%= client.name %> </td>
+ <td><%= client.company %> </td>
+ <td><%= client.mobile %> </td>
+ <td><%= client.website %> </td>
+ </tr>
+
+<% end %>
+
+

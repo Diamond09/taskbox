@@ -1,0 +1,20 @@
+<h3> Add Student</h3>
+<%= form_for @student do |f| %>
+<% if @student.errors.any? %>
+<div class="error" style ="color:red">
+<ol>
+<% for msg in @student.errors.full_messages %>
+<li><%= msg %></li>
+<%end %>
+</ol>
+</div>
+<%end%>
+
+<label> Name </label><br/>
+<%= f.text_field :name %></br>
+
+<label> email </label><br/>
+<%= f.text_field :email %><br/>
+
+<%= f.submit %>
+<%end%>

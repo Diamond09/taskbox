@@ -1,0 +1,24 @@
+<h3>Listing Projects</h3>
+<table border = "1">
+<strong>Filter by</strong>
+<% for client in Client.all %>
+<%= link_to client.name,projects_path(client_id: client.id) %>
+<%end%>
+<%= link_to "All",projects_path %> 
+<tr>
+<thead>
+<th>Name</th>
+<th>Status</th>
+<th>Client</th>
+</thead>
+</tr>
+<tbody>
+<% for project in @projects%>
+<tr> 
+<td><%= link_to project.name,project_path(project) %></td>
+<td><%= project.status %></td>
+<td><%= project.client.try(:name) %></td>
+<%end%>
+</tbody>
+</table>
+<%= link_to "Add project",new_project_path %>

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @bank_detail.client_id %>
+</p>
+
+<p>
+  <strong>Acc no:</strong>
+  <%= @bank_detail.acc_no %>
+</p>
+
+<p>
+  <strong>Bank name:</strong>
+  <%= @bank_detail.bank_name %>
+</p>
+
+<p>
+  <strong>Tin number:</strong>
+  <%= @bank_detail.tin_number %>
+</p>
+
+<%= link_to 'Edit', edit_bank_detail_path(@bank_detail) %> |
+<%= link_to 'Back', bank_details_path %>

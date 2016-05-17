@@ -1,0 +1,412 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"b",
+				"border	Attr"
+			],
+			[
+				"cli",
+				"client"
+			],
+			[
+				"nam",
+				"name"
+			],
+			[
+				"rand",
+				"random_numb"
+			],
+			[
+				"guess",
+				"guesses"
+			],
+			[
+				"ran",
+				"random_numb"
+			],
+			[
+				"gues",
+				"guess_number"
+			],
+			[
+				"play",
+				"player_guess"
+			],
+			[
+				"plyer",
+				"player_guess_number"
+			],
+			[
+				"ra",
+				"random_numb"
+			],
+			[
+				"to",
+				"to_i"
+			],
+			[
+				"P",
+				"Project"
+			],
+			[
+				"clie",
+				"Client1"
+			],
+			[
+				"C",
+				"Client"
+			],
+			[
+				"m",
+				"mobile"
+			],
+			[
+				"an",
+				"Aniruddha"
+			],
+			[
+				"p",
+				"programs_attended"
+			],
+			[
+				"co",
+				"company"
+			],
+			[
+				"pr",
+				"project2"
+			],
+			[
+				"project",
+				"project2"
+			],
+			[
+				"get",
+				"get_status"
+			],
+			[
+				"set",
+				"set_status"
+			],
+			[
+				"set_",
+				"set_name"
+			],
+			[
+				"pro",
+				"Project"
+			],
+			[
+				"is",
+				"is_open"
+			],
+			[
+				"prices",
+				"cart_prices"
+			],
+			[
+				"c",
+				"calculate_total"
+			],
+			[
+				"su",
+				"sum"
+			],
+			[
+				"vo",
+				"vowels"
+			],
+			[
+				"vowel",
+				"vowel_count"
+			],
+			[
+				"se",
+				"sentence"
+			],
+			[
+				"third",
+				"third_numb"
+			],
+			[
+				"la",
+				"largest"
+			],
+			[
+				"t",
+				"third_numb"
+			],
+			[
+				"sec",
+				"second_numb"
+			],
+			[
+				"first",
+				"first_numb"
+			],
+			[
+				"last",
+				"last_name"
+			],
+			[
+				"middl",
+				"middle_name"
+			],
+			[
+				"las",
+				"last_name"
+			],
+			[
+				"eve",
+				"even_numbers"
+			],
+			[
+				"odd",
+				"odd_numbers"
+			],
+			[
+				"num",
+				"numbers"
+			],
+			[
+				"cart_",
+				"cart_prices"
+			],
+			[
+				"cart",
+				"cart_total"
+			],
+			[
+				"car",
+				"cart_total"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Admin/feb-ror/ruby/grade",
+		"/C/Users/Admin/feb-ror/ruby/the.rb",
+		"/C/Users/Admin/feb-ror/ruby/inherit.rb",
+		"/C/Users/Admin/feb-ror/ruby/isha.rb",
+		"/C/Users/Admin/feb-ror/ruby/class2.rb",
+		"/C/Users/Admin/feb-ror/ruby/class1.rb",
+		"/C/Users/Admin/feb-ror/ruby/password.rb",
+		"/C/Users/Admin/feb-ror/ruby/methods.rb",
+		"/C/Users/Admin/feb-ror/rails/taskboxrails-v/public/hello.html",
+		"/C/Users/Admin/feb-ror/rails/taskboxrails-v/hello.html",
+		"/C/Users/Admin/Desktop/day7.mov",
+		"/C/Users/Admin/feb-ror/rails/taskboxrails-v/hello.html.erb",
+		"/C/Users/Admin/feb-ror/rails/taskboxrails-v/app/controllers/say_controller.rb",
+		"/C/Users/Admin/feb-ror/rails/taskboxrails-v/Gemfile",
+		"/C/Users/Admin/feb-ror/rails/taskboxrails-v/app/views/layouts/application.html.erb",
+		"/C/Users/Admin/feb-ror/rails/taskboxrails-v/app/views/say/hello.html.erb",
+		"/C/Users/Admin/feb-ror/rails/taskboxrails-v/config/routes.rb",
+		"/C/Users/Admin/feb-ror/rails/taskboxrails-v/app/assets/stylesheets/say.scss",
+		"/C/Users/Admin/feb-ror/rails/taskboxrails-v/tmp/pids/server.pid",
+		"/C/Users/Admin/feb-ror/ruby/class5a.rb",
+		"/C/Users/Admin/feb-ror/ruby/guessgame.rb",
+		"/C/Users/Admin/feb-ror/ruby/fun.rb",
+		"/C/Users/Admin/feb-ror/ruby/class5.rb",
+		"/C/Users/Admin/feb-ror/ruby/class4.rb",
+		"/C/Users/Admin/feb-ror/ruby/circlr.rb",
+		"/C/Users/Admin/feb-ror/ruby/class3.rb",
+		"/C/Users/Admin/feb-ror/ruby/guess game.rb",
+		"/C/Users/Admin/feb-ror/ruby/methods3.rb",
+		"/C/Users/Admin/feb-ror/ruby/discount.rb",
+		"/C/Users/Admin/feb-ror/ruby/methods2.rb",
+		"/C/Users/Admin/feb-ror/ruby/hash_cart.rb",
+		"/C/Users/Admin/feb-ror/ruby/products.rb",
+		"/C/Users/Admin/feb-ror/ruby/vowels.rb",
+		"/C/Users/Admin/feb-ror/ruby/numerator.rb",
+		"/C/Users/Admin/feb-ror/ruby/guess_q.rb",
+		"/C/Users/Admin/feb-ror/ruby/largest.rb",
+		"/C/Users/Admin/feb-ror/ruby/grade.rb",
+		"/C/Users/Admin/feb-ror/ruby/resort_temp.rb",
+		"/C/Users/Admin/feb-ror/ruby/marks.rb",
+		"/C/Users/Admin/feb-ror/ruby/numbers.rb",
+		"/C/Users/Admin/feb-ror/ruby/greeting1.rb",
+		"/C/Users/Admin/feb-ror/ruby/#.rb",
+		"/C/Users/Admin/feb-ror/ruby/greeting.rb",
+		"/C/Users/Admin/feb-ror/ruby/cart_ex.rb",
+		"/C/adi/ruby/fun.rb",
+		"/C/feb-ror/ruby/ruberstamp.rb",
+		"/C/feb-ror/ruby/rubberstamp.rb",
+		"/C/feb-ror/ruby/fun.rb",
+		"/C/Users/Admin/ror/ruby/greeting.rb",
+		"/C/feb-ror/ruby/cart_ex.rb",
+		"/C/Users/Admin/feb-ror/ruby/ruberstamp.rb",
+		"/C/feb-ror/ruby/simple_calc.rb",
+		"/C/feb-ror/ruby/guess game.rb",
+		"/C/Users/Admin/Desktop/feb-ror/ruby/simple_calc.rb",
+		"/C/Users/Admin/Desktop/feb-ror/ruby/greeting.rb",
+		"/C/Users/Admin/Desktop/feb-ror/ruby/simple_calc1.rb",
+		"/C/Users/Admin/Desktop/feb-ror/ruby/guess game.rb",
+		"/C/Users/Admin/Desktop/feb-ror/ruby/brother.rb",
+		"/C/Users/Admin/Desktop/feb-ror/ruby/fun.rb",
+		"/C/Users/Admin/Desktop/feb-ror/ruby/hello.rb",
+		"/C/Users/Admin/Desktop/feb-ror/ruby/guessgame.rb",
+		"/C/Users/Admin/feb-ror/ruby/simpl_calc.rb",
+		"/C/Users/Admin/feb-ror/ruby/simple_calc1.rb",
+		"/C/Users/Admin/feb-ror/ruby/hello.rb"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "project.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ser",
+				"taskboxrails-v\\tmp\\pids\\server.pid"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 169.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

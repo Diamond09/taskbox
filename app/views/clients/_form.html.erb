@@ -1,0 +1,42 @@
+<%= form_for @client do |f| %>
+<% if @client.errors.any? %>
+<div class="error" style="color: red">
+<ol>
+<% for msg in @client.errors.full_messages %>
+<li><%= msg %></li>
+<% end %>
+</ol>
+</div>
+<% end %>
+
+<label>Name</label><br/>
+ <%= f.text_field :name %><br/>
+
+ <label>Company</label><br/>
+ <%= f.text_field :company %><br/>
+
+ <label>Mobile</label><br/>
+ <%= f.text_field :mobile %><br/>
+
+ <label>Email</label><br/>
+ <%= f.text_field :email %><br/>
+
+<label>Website</label><br/>
+ <%= f.text_field :website %><br/>
+ <h3>Bank Details</h3>
+
+<%= f.fields_for @bank_detail do |bank| %>
+
+ <label>Account number</label><br/>
+ <%= bank.text_field :acc_no %><br/>
+
+ <label>Bank name</label><br/>
+ <%= bank.text_field :bank_name %><br/>
+
+ <label>Tin number</label><br/>
+ <%= bank.text_field :tin_number %><br/>
+<%end%>
+ 
+  <%= f.submit %>
+  <% end %>
+

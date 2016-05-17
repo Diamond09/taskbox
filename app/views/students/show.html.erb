@@ -1,0 +1,6 @@
+<h3><%= @student.name %></h3>
+<h4><%= @student.email %></h4>
+<small>
+<%= link_to "destroy",student_path(@student.id),method: :destroy,data:{confirm: "Are you sure"} %>
+</small>
+

@@ -1,0 +1,12 @@
+<h1>Dashboard</h1>
+<h3>PROJECT STATUS</h3>
+<%= pie_chart({"NEW"=> Project.where('status = ?',"new").count,"ON-GOING"=> Project.where('status = ?',"on-going").count,"COMPLETED"=>Project.where('status = ?',"completed").count}) %>
+<h3>CLIENT PROJECT</h3>
+<% data = {} %>
+<%Client.all.each do |client| %>
+<% data["#{client.name}"] = client.projects.size %>
+<%end %>
+<%= column_chart(data) %>
+
+
+

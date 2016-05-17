@@ -1,0 +1,28 @@
+<h3>Add Project</h3>
+<% form_for @project do |f| %>
+<label> Client </label><br/>
+<%= f.collection_select :client_id,Client.all,:id,:company,prompt: "select" %> <br/>
+
+<label> Name</label><br/>
+<%= f.text_field :name,required:true%><br/>
+
+<label> Description</label><br/> 
+<%= f.text_area :description %><br/>
+
+<label> Start Date</label><br/> 
+<%= f.date_select :start_date,order:[:day,:month,:year] %><br/>
+<label>Status</label><br/>
+<%= radio_button :status,"open" %> Open
+<%= radio_button :status, "on-going" %> On-going
+<%= radio_button :status, "completed" %> Completed
+<br/>
+<%= f.submit %>
+
+<% end %>
+
+
+
+
+
+
+

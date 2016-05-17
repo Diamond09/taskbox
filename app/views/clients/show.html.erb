@@ -1,0 +1,26 @@
+<h2><%= @client.name %>
+<small>
+<%= link_to "edit",edit_client_path(@client.id) %> | 
+<%= link_to "destroy",client_path(@client.id),method: :delete,data:{confirm: "Are you sure?"} %>
+</small>
+</h2>
+
+<p> <%= @client.company %>| <%= @client.website %>|<%= @client.mobile %> </p>
+
+
+<% if @client.projects.empty? %>
+<p> No project found.Add your first project <%= link_to "here" %>
+</p>
+<% else %>
+<%data ={}%>
+<h3> Project count = <%= @client.projects.size %></h3>
+<ul>
+<% for project in @client.projects %>
+<li><%= project.id %><%= project.name %></li>
+<%= data["#{project.name}"] = project.tasks.size %>
+<%end%>
+
+<%= column_chart(data)%>
+</ul>
+<%end%> 
+

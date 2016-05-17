@@ -1,0 +1,46 @@
+<h1><%= @project.name %></h1>
+<p><%= @project.status %> | <%= @project.start_date.strftime("%A,%d %B %Y") %>
+| <%= link_to @project.client.try(:name), client_path(@project.client) %>
+
+<h2>Total tasks : <%= @project.tasks.size %></h2>
+<% data = [] %>
+<% for task in @project.tasks %>
+<%= data.push([task.name,@project.start_date,task.due_date]) %><br/>
+<% end %>
+<%= timeline(data)%>
+
+
+<h3>Over due tasks</h3>
+
+<ul> <% over_due_tasks = @project.tasks.where('is_completed = ? AND due_date < ?',false,Date.today) %>
+ <% over_due_tasks.each do |task| %>
+<li>  <%= task.name %>| <%= task.due_date  %>
+(<%= link_to "mark as complete",tasks_mark_as_complete_path(task_id: task.id) %>)</li>
+  <% end %>
+  </ul>
+
+ <h3>Incomplete tasks</h3>
+ <ul> 
+ <% incomplete_tasks = @project.tasks.where('is_completed = ? AND due_date >= ?',false,Date.today) %>
+ <% incomplete_tasks.each do |task| %>
+<li> <%= task.name %>| <%= task.due_date  %>
+(<%= link_to "mark as complete",tasks_mark_as_complete_path(task_id: task.id)%>)</li>
+ <% end %></ul>
+
+ <h3>Completed tasks</h3>
+ <ul>
+ <% completed_tasks = @project.tasks.where('is_completed = ?',true) %>
+ <li> <% completed_tasks.each do |task| %></li>
+<%= task.name %> | <%= task.due_date %><br/> 
+ <%end%>
+ </ul> 
+
+ <h3>Add Task</h3>
+
+ <%= form_for @task do |f| %>
+ <%= f.text_field :name,placeholder: "Task name"%><br/><br/>
+ <label>Due date?</label> <%= f.date_select :due_date %><br/>
+ <label>Is completed?</label> <%= f.check_box :is_completed %> <br/><br/>
+ <%= f.hidden_field :project_id,value: @project.id %>
+ <%= f.submit %>
+ <% end %>
